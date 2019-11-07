@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="735" height="476">
+Your browser does not support the canvas element.
+</canvas>
+
+<script>
+var canvas = document.getElementById("myCanvas");
+     var context = canvas.getContext("2d");
+     var imageObj = new Image();
+     imageObj.onload = function(){
+         context.drawImage(imageObj, 0, 0);
+         context.font = "40pt Calibri";
+         context.fillText("My TEXT!", 50, 50);
+     };
+     imageObj.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQC63Q4hkKP2Gb19yj5K1T-EsFE6S8hwhuHqXnIXHtd_AQUkKyw';
+</script>
+
+</body>
+</html>
